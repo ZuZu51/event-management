@@ -1,0 +1,505 @@
+/* ============================================
+   EVENT INFO TAB - MODERN REDESIGN
+   ============================================ */
+
+.event-info-tab-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: var(--panel);
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid var(--surface-border);
+}
+
+/* ============================================
+   HEADER SECTION
+   ============================================ */
+
+.event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32px;
+  border-bottom: 1px solid var(--surface-border);
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.event-title {
+  margin: 0;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-color);
+  flex: 1;
+  min-width: 300px;
+  word-break: break-word;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.registered-badge {
+  padding: 8px 16px;
+  background: rgba(34, 197, 94, 0.1);
+  color: #22c55e;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* ============================================
+   EDIT MODE BANNER
+   ============================================ */
+
+.edit-mode-banner {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 32px;
+  background: linear-gradient(90deg, rgba(59, 130, 246, 0.1), rgba(99, 102, 241, 0.1));
+  border-bottom: 1px solid rgba(59, 130, 246, 0.2);
+  color: var(--primary-color);
+  font-weight: 500;
+  animation: slideInDown 0.3s ease;
+}
+
+.edit-mode-banner i {
+  font-size: 18px;
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ============================================
+   IMAGE SECTION
+   ============================================ */
+
+.event-image-section {
+  width: 100%;
+  height: 320px;
+  background: var(--surface-ground);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-bottom: 1px solid var(--surface-border);
+}
+
+.event-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.event-image-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  color: var(--text-color-secondary);
+  font-size: 14px;
+}
+
+.event-image-placeholder i {
+  font-size: 48px;
+  opacity: 0.5;
+}
+
+/* ============================================
+   KEY INFO GRID
+   ============================================ */
+
+.key-info-grid {
+  padding: 32px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  border-bottom: 1px solid var(--surface-border);
+}
+
+.key-info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.key-info-item > label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.key-info-value {
+  font-size: 15px;
+  color: var(--text-color);
+  word-break: break-word;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Mode Badges */
+.mode-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 13px;
+  width: fit-content;
+}
+
+.mode-online {
+  background: rgba(34, 197, 94, 0.15);
+  color: #22c55e;
+}
+
+.mode-offline {
+  background: rgba(249, 115, 22, 0.15);
+  color: #f97316;
+}
+
+.mode-hybrid {
+  background: rgba(59, 130, 246, 0.15);
+  color: #3b82f6;
+}
+
+.badge-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 13px;
+  background: rgba(107, 114, 128, 0.15);
+  color: #6b7280;
+}
+
+/* Attendee Count */
+.attendee-count {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.attendee-count i {
+  font-size: 18px;
+}
+
+/* Time-Duration Group (Edit) */
+.time-duration-group {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.time-duration-group > * {
+  flex: 1;
+  min-width: 120px;
+}
+
+.event-name-input {
+  font-size: 18px;
+  font-weight: 600 !important;
+}
+
+/* ============================================
+   LINKS SECTION
+   ============================================ */
+
+.links-section {
+  padding: 32px;
+  border-bottom: 1px solid var(--surface-border);
+}
+
+.links-section > h3 {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.link-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.link-item > label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.link-value {
+  display: flex;
+  align-items: center;
+}
+
+.link-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.link-button:hover {
+  background: rgba(59, 130, 246, 0.2);
+  border-color: rgba(59, 130, 246, 0.4);
+  transform: translateX(2px);
+}
+
+.link-button i {
+  font-size: 16px;
+}
+
+.text-muted {
+  color: var(--text-color-secondary);
+  font-style: italic;
+}
+
+/* ============================================
+   DESCRIPTION SECTION
+   ============================================ */
+
+.description-section {
+  padding: 32px;
+  border-bottom: 1px solid var(--surface-border);
+}
+
+.description-section > h3 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.description-content {
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-color);
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.description-textarea {
+  width: 100% !important;
+  min-height: 150px;
+  padding: 12px !important;
+  border: 1px solid var(--surface-border) !important;
+  border-radius: 8px !important;
+  font-family: inherit !important;
+  font-size: 14px !important;
+  color: var(--text-color) !important;
+  background: var(--surface-ground) !important;
+}
+
+.description-textarea:focus {
+  border-color: var(--primary-color) !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1) !important;
+}
+
+/* ============================================
+   ADDITIONAL SETTINGS (EDIT MODE)
+   ============================================ */
+
+.additional-settings {
+  padding: 32px;
+  background: var(--surface-ground);
+  border-bottom: 1px solid var(--surface-border);
+}
+
+.additional-settings > h3 {
+  margin: 0 0 20px 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.settings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.setting-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.setting-item > label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-color-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ============================================
+   INPUT STYLING
+   ============================================ */
+
+.event-info-tab-container .p-inputtext,
+.event-info-tab-container .p-inputtextarea,
+.event-info-tab-container .p-dropdown,
+.event-info-tab-container .p-calendar .p-calendar-input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--surface-border);
+  border-radius: 8px;
+  font-size: 14px;
+  background: var(--surface-ground);
+  color: var(--text-color);
+  transition: all 0.2s ease;
+}
+
+.event-info-tab-container .p-inputtext:focus,
+.event-info-tab-container .p-inputtextarea:focus,
+.event-info-tab-container .p-dropdown:focus,
+.event-info-tab-container .p-calendar .p-calendar-input:focus {
+  border-color: var(--primary-color);
+  
+  outline: none;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+  .event-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+  }
+
+  .event-title {
+    min-width: auto;
+    font-size: 24px;
+  }
+
+  .header-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .event-image-section {
+    height: 240px;
+  }
+
+  .key-info-grid,
+  .links-grid {
+    grid-template-columns: 1fr;
+    padding: 24px;
+    gap: 16px;
+  }
+
+  .time-duration-group {
+    flex-direction: column;
+  }
+
+  .time-duration-group > * {
+    width: 100%;
+  }
+
+  .links-section,
+  .description-section,
+  .additional-settings {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .event-info-tab-container {
+    border-radius: 12px;
+  }
+
+  .event-header {
+    padding: 16px;
+    border-bottom-width: 1px;
+  }
+
+  .event-title {
+    font-size: 20px;
+  }
+
+  .key-info-grid {
+    padding: 16px;
+    gap: 12px;
+  }
+
+  .links-section,
+  .description-section,
+  .additional-settings {
+    padding: 16px;
+  }
+
+  .event-image-section {
+    height: 200px;
+  }
+}
+
+/* ============================================
+   DARK MODE SUPPORT
+   ============================================ */
+
+@media (prefers-color-scheme: dark) {
+  
+
+  .link-button {
+    background: rgba(59, 130, 246, 0.15);
+    border-color: rgba(59, 130, 246, 0.3);
+  }
+
+  .link-button:hover {
+    background: rgba(59, 130, 246, 0.25);
+    border-color: rgba(59, 130, 246, 0.5);
+  }
+
+  .mode-badge,
+  .badge-secondary {
+    opacity: 0.9;
+  }
+}

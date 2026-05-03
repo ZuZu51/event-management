@@ -1,0 +1,254 @@
+.student-invitations-container {
+  padding: 24px;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+}
+
+.page-header {
+  margin-bottom: 32px;
+}
+
+.page-header h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 8px 0;
+}
+
+.header-subtitle {
+  font-size: 14px;
+  color: #7f8c8d;
+  margin: 0;
+}
+
+.loading-text {
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 16px;
+  padding: 32px 0;
+}
+
+.empty-state-large {
+  text-align: center;
+  padding: 48px 24px;
+  background-color: white;
+  border-radius: 8px;
+  color: #95a5a6;
+  font-size: 18px;
+}
+
+.invitation-section {
+  margin-bottom: 32px;
+}
+
+.section-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 16px 0;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 32px 24px;
+  background-color: white;
+  border-radius: 8px;
+  color: #95a5a6;
+}
+
+
+
+.invitation-card {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-left: 4px solid #3498db;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.invitation-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Status-based border colors */
+.invitation-card:has(.card-status:contains('Chờ xử lý')) {
+  border-left-color: #f39c12;
+}
+
+/* Using attribute selector for pending status */
+.invitation-card {
+  border-left-color: #3498db;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  background-color: #f8f9fa;
+}
+
+.card-title {
+  flex: 1;
+  font-size: 16px;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0;
+  word-break: break-word;
+}
+
+.card-status {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 8px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.card-status span:first-child {
+  font-size: 14px;
+}
+
+.status-text {
+  color: #7f8c8d;
+}
+
+.card-divider {
+  height: 1px;
+  background-color: #ecf0f1;
+}
+
+.card-content {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.info-row .label {
+  font-weight: 600;
+  color: #34495e;
+  min-width: 100px;
+  font-size: 13px;
+}
+
+.info-row .value {
+  color: #2c3e50;
+  font-size: 13px;
+  flex: 1;
+  word-break: break-word;
+}
+
+.status-info {
+  color: #e74c3c;
+  font-weight: 500;
+}
+
+.card-actions {
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #ecf0f1;
+}
+
+.action-btn {
+  flex: 1;
+  font-size: 12px !important;
+  padding: 6px 12px !important;
+}
+
+.action-btn :global(.p-button-label) {
+  font-size: 12px;
+}
+
+/* Dialog Styling */
+.dialog-content {
+  padding: 16px 0;
+}
+
+.dialog-label {
+  display: block;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.dialog-input {
+  width: 100% !important;
+  font-size: 13px !important;
+}
+
+.dialog-actions {
+  display: flex;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px solid #ecf0f1;
+}
+
+.dialog-actions :global(.p-button) {
+  flex: 1;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .student-invitations-container {
+    padding: 16px;
+  }
+
+  .page-header {
+    margin-bottom: 24px;
+  }
+
+  .page-header h1 {
+    font-size: 24px;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .card-header {
+    flex-direction: column;
+  }
+
+  .card-status {
+    align-self: flex-start;
+  }
+
+  .info-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .info-row .label {
+    min-width: unset;
+  }
+
+  .card-actions {
+    flex-direction: column;
+  }
+
+  .action-btn {
+    width: 100%;
+  }
+}
+
+/* Status-specific styling using pseudo-classes would be ideal, but CSS limitations require JS solution */

@@ -1,0 +1,269 @@
+﻿/* Admin User Management */
+
+.admin-user-management {
+  width: 100%;
+}
+
+.admin-user-management .admin-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+  border: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.admin-user-management .card-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(102, 126, 234, 0.1);
+}
+
+.admin-user-management .card-header h2 {
+  color: #667eea;
+  margin: 0 0 0.25rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.admin-user-management .card-header p {
+  color: #64748b;
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.admin-user-management .toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.admin-user-management .toolbar-search {
+  flex: 1;
+  min-width: 200px;
+}
+
+.admin-user-management .search-input {
+  width: 100% !important;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0 !important;
+  padding: 0.5rem 0.75rem !important;
+  font-size: 0.95rem;
+}
+
+.admin-user-management .search-input:focus {
+  border-color: #667eea !important;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1) !important;
+}
+
+.admin-user-management :global(.p-button-secondary) {
+  background: #e2e8f0 !important;
+  color: #333 !important;
+  border: none !important;
+  border-radius: 6px !important;
+  padding: 0.5rem 1.5rem !important;
+}
+
+.admin-user-management :global(.p-button-secondary:hover) {
+  background: #cbd5e1 !important;
+}
+
+.admin-user-management :global(.data-tabs) {
+  margin-bottom: 2rem;
+}
+
+.admin-user-management :global(.data-tabs .p-tabview-nav) {
+  background: white;
+  border-bottom: 2px solid rgba(102, 126, 234, 0.1);
+}
+
+.admin-user-management :global(.data-tabs .p-tabview-nav li .p-tabview-nav-link) {
+  color: #64748b;
+  font-weight: 500;
+  padding: 1rem;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.admin-user-management :global(.data-tabs .p-tabview-nav li.p-highlight .p-tabview-nav-link) {
+  color: #667eea;
+  border-bottom-color: #667eea;
+}
+
+.admin-user-management :global(.users-table) {
+  border-radius: 8px;
+  border: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.admin-user-management :global(.users-table .p-datatable-thead > tr > th) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 1rem 0.75rem;
+}
+
+.admin-user-management :global(.users-table .p-datatable-tbody > tr > td) {
+  padding: 0.75rem;
+  border-color: rgba(102, 126, 234, 0.1);
+}
+
+.admin-user-management :global(.users-table .p-datatable-tbody > tr:hover) {
+  background-color: rgba(102, 126, 234, 0.08);
+}
+
+.admin-user-management :global(.p-tag) {
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  font-size: 0.85rem;
+}
+
+.admin-user-management .form-group-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.admin-user-management .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.admin-user-management .form-group label {
+  color: #333;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.admin-user-management .form-group :global(input),
+.admin-user-management .form-group :global(.p-dropdown),
+.admin-user-management .form-group :global(.p-inputswitch) {
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  padding: 0.75rem;
+}
+
+.admin-user-management .form-group :global(input:focus),
+.admin-user-management .form-group :global(.p-dropdown:focus) {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.admin-user-management .form-group.flex {
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.admin-user-management .form-group.flex label {
+  margin: 0;
+}
+
+.admin-user-management .form-group.gap-2 {
+  gap: 0.5rem;
+}
+
+.admin-user-management .dialog-footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.admin-user-management :global(.p-dialog-header) {
+  background: white;
+  border-bottom: 2px solid rgba(102, 126, 234, 0.1);
+}
+
+.admin-user-management :global(.p-dialog-content) {
+  padding: 1.5rem;
+}
+
+.admin-user-management :global(.p-button-warning) {
+  background: #f59e0b !important;
+  border: none !important;
+  border-radius: 6px !important;
+}
+
+.admin-user-management :global(.p-button-warning:hover) {
+  background: #d97706 !important;
+}
+
+.admin-user-management :global(.p-button-danger) {
+  background: #ef4444 !important;
+  border: none !important;
+  border-radius: 6px !important;
+}
+
+.admin-user-management :global(.p-button-danger:hover) {
+  background: #dc2626 !important;
+}
+
+.admin-user-management :global(.p-button-rounded) {
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Flex helpers */
+.admin-user-management .flex {
+  display: flex;
+}
+
+.admin-user-management .gap-2 {
+  gap: 0.5rem;
+}
+
+.admin-user-management .items-center {
+  align-items: center;
+}
+
+/* Status Colors */
+.admin-user-management :global(.p-tag-success) {
+  background: #dcfce7 !important;
+  color: #166534 !important;
+}
+
+.admin-user-management :global(.p-tag-danger) {
+  background: #fee2e2 !important;
+  color: #991b1b !important;
+}
+
+.admin-user-management :global(.p-tag-warning) {
+  background: #fef3c7 !important;
+  color: #92400e !important;
+}
+
+.admin-user-management :global(.p-tag-info) {
+  background: #e0e7ff !important;
+  color: #312e81 !important;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .admin-user-management {
+    padding: 1rem;
+  }
+
+  .admin-user-management .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .admin-user-management .toolbar-search {
+    width: 100%;
+  }
+
+  .admin-user-management :global(.p-dialog) {
+    width: 95vw !important;
+  }
+}

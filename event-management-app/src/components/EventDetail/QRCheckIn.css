@@ -1,0 +1,98 @@
+/* QRCheckIn Component Styles */
+
+.qr-checkin-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.qr-search-section {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.qr-search-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+.qr-event-found {
+  padding: 1rem;
+  background: #f0f9ff;
+  border: 1px solid #bfdbfe;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.qr-event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.qr-event-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #1e40af;
+}
+
+.qr-camera-toggle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #fafafa;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.qr-scanner-wrapper {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #f5f5f5;
+  border-radius: 0.5rem;
+  border: 2px solid #ddd;
+}
+
+.qr-records-section {
+  margin-top: 2rem;
+}
+
+.qr-records-table {
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+.qr-status-icon {
+  margin-right: 0.5rem;
+}
+
+.qr-permission-error {
+  padding: 1rem;
+  background: #fee;
+  border: 1px solid #fcc;
+  border-radius: 0.5rem;
+  color: #c33;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .qr-search-section {
+    flex-direction: column;
+  }
+
+  .qr-event-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .qr-records-table {
+    font-size: 0.8rem;
+  }
+}

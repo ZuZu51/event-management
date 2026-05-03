@@ -1,0 +1,160 @@
+/* Admin School & Department Management */
+
+.admin-school-management {
+  width: 100%;
+}
+
+.admin-school-management .admin-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+  border: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.admin-school-management .card-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid rgba(102, 126, 234, 0.1);
+}
+
+.admin-school-management .card-header h2 {
+  color: #667eea;
+  margin: 0 0 0.25rem 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.admin-school-management .card-header p {
+  color: #64748b;
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.admin-school-management .tab-toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  gap: 1rem;
+}
+
+
+
+.admin-school-management .tab-toolbar button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(102, 126, 234, 0.4);
+}
+
+.admin-school-management :global(.p-datatable) {
+  border-radius: 8px;
+  border: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.admin-school-management :global(.p-datatable .p-datatable-thead > tr > th) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 1rem 0.75rem;
+}
+
+.admin-school-management :global(.p-datatable .p-datatable-tbody > tr > td) {
+  padding: 0.75rem;
+  border-color: rgba(102, 126, 234, 0.1);
+}
+
+.admin-school-management :global(.p-datatable .p-datatable-tbody > tr:hover) {
+  background-color: rgba(102, 126, 234, 0.08);
+}
+
+.admin-school-management .form-group-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.admin-school-management .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.admin-school-management .form-group label {
+  color: #333;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.admin-school-management .form-group :global(input),
+.admin-school-management .form-group :global(.p-dropdown),
+.admin-school-management .form-group :global(.p-inputswitch) {
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+}
+
+.admin-school-management .form-group :global(input:focus),
+.admin-school-management .form-group :global(.p-dropdown:focus) {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.admin-school-management .form-group.flex {
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.admin-school-management .form-group.flex label {
+  margin: 0;
+}
+
+.admin-school-management .dialog-footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(102, 126, 234, 0.1);
+}
+
+.admin-school-management .dialog-footer button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.admin-school-management :global(.p-button-success) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+}
+
+.admin-school-management :global(.p-button-secondary) {
+  background: #e2e8f0;
+  color: #333;
+  border: none;
+}
+
+.admin-school-management :global(.p-button-warning) {
+  background: #f59e0b;
+  border: none;
+}
+
+.admin-school-management :global(.p-button-danger) {
+  background: #ef4444;
+  border: none;
+}
+
+/* Flex helpers */
+.admin-school-management .flex {
+  display: flex;
+}
+
+.admin-school-management .gap-2 {
+  gap: 0.5rem;
+}
+
+.admin-school-management .items-center {
+  align-items: center;
+}

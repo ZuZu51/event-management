@@ -1,0 +1,259 @@
+/* Container */
+.checkin-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Header */
+.checkin-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 32px;
+  padding: 24px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+}
+
+.header-icon {
+  font-size: 48px;
+  line-height: 1;
+}
+
+.header-text h2 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #333;
+}
+
+.header-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Content Grid */
+.checkin-content {
+  display: grid;
+  gap: 20px;
+}
+
+/* Time Cards */
+.time-card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  overflow: hidden;
+}
+
+/* Card Header */
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.card-icon {
+  font-size: 32px;
+  line-height: 1;
+}
+
+.card-title h3 {
+  margin: 0 0 4px 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-title span {
+  font-size: 13px;
+  color: #666;
+}
+
+/* Card Body */
+.card-body {
+  padding: 24px;
+}
+
+.time-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 20px;
+  align-items: center;
+}
+
+.time-block {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid #e0e0e0;
+}
+
+.time-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #666;
+}
+
+.time-label i {
+  font-size: 14px;
+}
+
+.time-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+.time-arrow {
+  font-size: 24px;
+  color: #999;
+}
+
+/* Info Box */
+.info-box {
+  display: flex;
+  gap: 16px;
+  padding: 20px 24px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  margin-top: 8px;
+}
+
+.info-icon {
+  font-size: 28px;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.info-content {
+  flex: 1;
+}
+
+.info-content strong {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 15px;
+  color: #333;
+  font-weight: 600;
+}
+
+.info-content ul {
+  margin: 0;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.info-content li {
+  margin-bottom: 6px;
+  color: #666;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.info-content li:last-child {
+  margin-bottom: 0;
+}
+
+/* Loading State */
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+}
+
+.loading-state i {
+  color: #666;
+  margin-bottom: 16px;
+}
+
+.loading-state p {
+  margin: 0;
+  color: #666;
+  font-size: 15px;
+}
+
+/* Disabled State */
+.disabled-state {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+}
+
+.disabled-icon {
+  font-size: 64px;
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+
+.disabled-state h3 {
+  margin: 0 0 12px 0;
+  font-size: 20px;
+  color: #333;
+  font-weight: 600;
+}
+
+.disabled-state p {
+  margin: 0;
+  color: #666;
+  font-size: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .checkin-container {
+    padding: 16px;
+  }
+
+  .checkin-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .header-text h2 {
+    font-size: 20px;
+  }
+
+  .time-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .time-arrow {
+    transform: rotate(90deg);
+  }
+
+  .time-value {
+    font-size: 24px;
+  }
+
+  .card-title h3 {
+    font-size: 16px;
+  }
+
+  .info-box {
+    flex-direction: column;
+    text-align: center;
+  }
+}

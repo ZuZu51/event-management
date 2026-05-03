@@ -1,0 +1,250 @@
+.event-management-table-wrapper {
+  width: 100%;
+  padding: 1.5rem;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+}
+
+/* Search section */
+.search-section {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #f0f4ff;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-input :deep(.p-inputtext) {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  background-color: #f9fafb;
+}
+
+.search-input :deep(.p-inputtext:focus) {
+  border-color: #667eea;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.reload-button :deep(.p-button) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.reload-button :deep(.p-button:hover) {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(102, 126, 234, 0.3);
+}
+
+.reload-button :deep(.p-button:active) {
+  transform: translateY(0);
+}
+
+.event-management-datatable {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+.event-management-datatable :deep(.p-datatable) {
+  border: none;
+  background-color: white;
+}
+
+.event-management-datatable :deep(.p-datatable-header) {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 8px 8px 0 0;
+}
+
+.event-management-datatable :deep(.p-datatable-thead > tr > th) {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  font-weight: 700;
+  padding: 1rem;
+  border-bottom: 2px solid #667eea;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.event-management-datatable :deep(.p-datatable-tbody > tr > td) {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e5e5e5;
+  vertical-align: middle;
+  transition: background-color 0.2s ease;
+}
+
+.event-management-datatable :deep(.p-datatable-tbody > tr) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.event-management-datatable :deep(.p-datatable-tbody > tr:hover) {
+  background-color: #f0f4ff !important;
+}
+
+.event-management-datatable :deep(.p-paginator) {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  border-top: 1px solid #e0e0e0;
+  padding: 0.75rem 1rem;
+}
+
+.event-management-datatable :deep(.p-paginator-current) {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+/* Badge styling */
+.event-management-datatable :deep(.p-badge) {
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.event-management-datatable :deep(.p-badge.p-badge-success) {
+  background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+  color: white;
+}
+
+.event-management-datatable :deep(.p-badge.p-badge-info) {
+  background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+  color: white;
+}
+
+.event-management-datatable :deep(.p-badge.p-badge-warning) {
+  background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
+  color: white;
+}
+
+.event-management-datatable :deep(.p-badge.p-badge-danger) {
+  background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+  color: white;
+}
+
+/* Input Switch */
+.event-management-datatable :deep(.p-inputswitch) {
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.event-management-datatable :deep(.p-inputswitch.p-inputswitch-checked .p-inputswitch-slider) {
+  background: linear-gradient(135deg, #27ae60 0%, #229954 100%);
+}
+
+/* Button styling */
+.event-management-datatable :deep(.p-button) {
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.event-management-datatable :deep(.p-button-rounded) {
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.event-management-datatable :deep(.p-button-info) {
+  background: #3498db;
+  border-color: #3498db;
+}
+
+.event-management-datatable :deep(.p-button-info:hover) {
+  background: #2980b9;
+  border-color: #2980b9;
+}
+
+.event-management-datatable :deep(.p-button-warning) {
+  background: #f39c12;
+  border-color: #f39c12;
+}
+
+.event-management-datatable :deep(.p-button-warning:hover) {
+  background: #e67e22;
+  border-color: #e67e22;
+}
+
+.event-management-datatable :deep(.p-button-sm) {
+  padding: 0.4rem 0.8rem;
+  font-size: 0.85rem;
+}
+
+/* Filter input */
+.event-management-datatable :deep(.p-column-filter) {
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.event-management-datatable :deep(.p-column-filter input),
+.event-management-datatable :deep(.p-column-filter .p-inputtext) {
+  width: 100%;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #bdc3c7;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+}
+
+.event-management-datatable :deep(.p-column-filter input:focus),
+.event-management-datatable :deep(.p-column-filter .p-inputtext:focus) {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+/* Action buttons container */
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+  .event-management-datatable :deep(.p-datatable-thead > tr > th),
+  .event-management-datatable :deep(.p-datatable-tbody > tr > td) {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .event-management-table-wrapper {
+    padding: 1rem;
+  }
+
+  .event-management-datatable {
+    font-size: 0.85rem;
+  }
+
+  .event-management-datatable :deep(.p-datatable-thead > tr > th),
+  .event-management-datatable :deep(.p-datatable-tbody > tr > td) {
+    padding: 0.5rem 0.35rem;
+  }
+
+  .event-management-datatable :deep(.p-button-rounded) {
+    width: 2rem;
+    height: 2rem;
+  }
+}

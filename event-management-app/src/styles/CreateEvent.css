@@ -1,0 +1,141 @@
+
+
+
+
+/* Event Type Selection */
+.create-event-modal.event-type-selection {
+  background: transparent;
+  padding: 0;
+}
+
+.create-event-modal.event-type-selection .p-field {
+  margin-bottom: 0;
+}
+
+.create-event-modal.event-type-selection label {
+  margin-bottom: 2rem;
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text, #000);
+}
+
+/* Event Form */
+.create-event-modal.event-form {
+  background: transparent;
+  padding: 0;
+}
+
+.create-event-modal .modal-section {
+  background: var(--panel, #f9fafb);
+  border-radius: var(--radius-lg, 0.75rem);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--bg-secondary, #e5e7eb);
+}
+
+.create-event-modal .modal-field-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text, #000);
+  font-size: 0.95rem;
+}
+
+.create-event-modal .time-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.create-event-modal .modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-color, #e5e7eb);
+}
+
+.create-event-modal .muted-note {
+  color: var(--text-secondary, #6b7280);
+  font-size: 0.9rem;
+}
+
+.create-event-modal .attendance-toggle {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.create-event-modal .p-field {
+  margin-bottom: 1.25rem;
+}
+
+.create-event-modal .p-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text, #000);
+  font-size: 0.95rem;
+}
+
+.create-event-modal .image-preview-wrapper {
+  margin-top: 1rem;
+}
+
+.create-event-modal .event-image-preview {
+  max-width: 220px;
+  max-height: 140px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.12);
+}
+
+/* PrimeReact overrides */
+.p-ampm-picker button {
+  display: none !important;
+}
+
+.pac-container {
+  z-index: 99999 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .create-event-page-header {
+    padding: 1rem;
+  }
+
+  .create-event-page-header h1 {
+    font-size: 1.25rem;
+  }
+
+  .create-event-page-content {
+    padding: 1rem;
+  }
+
+  .create-event-modal .time-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .create-event-modal .modal-actions {
+    flex-direction: column-reverse;
+  }
+
+  .create-event-modal .modal-actions button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .checkin-time-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .checkin-time-row {
+    grid-template-columns: 1fr;
+  }
+}

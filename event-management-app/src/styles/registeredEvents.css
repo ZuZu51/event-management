@@ -1,0 +1,55 @@
+.registered-events {
+  flex: 1;
+}
+
+.stats-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex: 1;
+}
+
+.stats-item-mini {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: var(--bg-secondary);
+  border-radius: var(--radius-md);
+  transition: var(--transition);
+}
+
+.stats-item-mini:hover {
+  background: var(--primary-light);
+  transform: translateX(4px);
+}
+
+.item-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.item-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.item-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+  word-break: break-word;
+}
+
+.item-subtitle {
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+
+.item-status {
+  font-size: 1.2rem;
+  color: #2e7d32;
+  font-weight: bold;
+}
